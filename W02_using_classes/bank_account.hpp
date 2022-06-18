@@ -9,5 +9,19 @@
 #define bank_account_hpp
 
 #include <stdio.h>
+#include <string>
+
+
+class Accounts{
+    
+private:
+    int accoutID;
+    std::string name;
+    float balance;
+    
+public:
+    Accounts();
+     
+}; // End Accounts class
 
 #endif /* bank_account_hpp */

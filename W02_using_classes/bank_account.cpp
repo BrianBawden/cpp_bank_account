@@ -6,3 +6,12 @@
 //
 
 #include "bank_account.hpp"
+#include <iostream>
+
+Accounts::Accounts(){
+    accoutID = 0;
+    name = "null";
+    balance = 0.0;
+    std::cout << "account created.\n" << accoutID << std::endl << name << std::endl << balance << std::endl;
+};
+
