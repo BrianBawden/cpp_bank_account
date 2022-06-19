@@ -15,6 +15,7 @@ int main() {
     
     Accounts brian;
     brian.setAccount();
+    brian.viewAccount();
     return 0;
    
 }

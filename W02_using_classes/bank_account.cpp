@@ -7,6 +7,7 @@
 
 #include "bank_account.hpp"
 #include <iostream>
+#include <iomanip>
 
 Accounts::Accounts(){
     accountId;
@@ -20,8 +21,16 @@ void Accounts::setAccount(){
     std::cin >> name;
     std::cout << "Enter account balance: ";
     std::cin >> balance;
-    std::cout << accountId;
 
+};
+
+void Accounts::viewAccount(){
+  std::cout
+    << "\nAccount ID: " << accountId
+    << "\nAccount name: " << name
+    << std::fixed << std::setprecision(2)
+    << "\nAccount balance: $" << balance
+    << std::endl;
 };
 
 int Accounts::accountId = 0;

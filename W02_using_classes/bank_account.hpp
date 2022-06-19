@@ -20,11 +20,9 @@ private:
     float balance;
     
 public:
-//    static int getAccoutId(){
-//        return accountId;
-//    };
     Accounts();
     void setAccount();
+    void viewAccount();
      
 }; // End Accounts class
 
