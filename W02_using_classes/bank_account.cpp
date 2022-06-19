@@ -40,7 +40,16 @@ void Accounts::accountDeposit(){
     balance += deposit;
     std::cout << std::fixed << std::setprecision(2);
     std::cout << "new balance: $"<< balance << std::endl;
-}
+};
+
+void Accounts::accountWithdrawl(){
+    float withdrawl;
+    std::cout << "Enter withdrawl amount: \n";
+    std::cin >> withdrawl;
+    balance -= withdrawl;
+    std::cout << std::fixed << std::setprecision(2);
+    std::cout << "new balance: $"<< balance << std::endl;
+};
 
 int Accounts::accountId = 0;
 
