@@ -24,7 +24,7 @@ public:
     void setAccount();
     void viewAccount();
     void accountDeposit();
-    void accountWithdrawl();
+    void accountWithdrawal();
      
 }; // End Accounts class
 

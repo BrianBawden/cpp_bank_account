@@ -21,7 +21,6 @@ void Accounts::setAccount(){
     std::cin >> name;
     std::cout << "Enter account balance: ";
     std::cin >> balance;
-
 };
 
 void Accounts::viewAccount(){
@@ -42,11 +41,11 @@ void Accounts::accountDeposit(){
     std::cout << "new balance: $"<< balance << std::endl;
 };
 
-void Accounts::accountWithdrawl(){
-    float withdrawl;
-    std::cout << "Enter withdrawl amount: \n";
-    std::cin >> withdrawl;
-    balance -= withdrawl;
+void Accounts::accountWithdrawal(){
+    float withdrawal;
+    std::cout << "Enter withdrawal amount: \n";
+    std::cin >> withdrawal;
+    balance -= withdrawal;
     std::cout << std::fixed << std::setprecision(2);
     std::cout << "new balance: $"<< balance << std::endl;
 };
