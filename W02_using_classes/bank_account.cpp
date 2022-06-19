@@ -9,9 +9,18 @@
 #include <iostream>
 
 Accounts::Accounts(){
-    accoutID = 0;
-    name = "null";
-    balance = 0.0;
-    std::cout << "account created.\n" << accoutID << std::endl << name << std::endl << balance << std::endl;
+    accoutID;
+    name;
+    balance;
+
+};
+
+void Accounts::setAccount(){
+    std::cout << "Enter account name: ";
+    std::cin >> name;
+    std::cout << "Enter account balance: ";
+    std::cin >> balance;
+    std::cout << name << ": " << balance;
+    
 };
 

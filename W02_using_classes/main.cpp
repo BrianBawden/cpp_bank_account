@@ -12,8 +12,9 @@
 
 int main() {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    
     Accounts brian;
+    brian.setAccount();
     return 0;
    
 }

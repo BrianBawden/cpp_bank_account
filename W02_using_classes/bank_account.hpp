@@ -21,6 +21,7 @@ private:
     
 public:
     Accounts();
+    void setAccount();
      
 }; // End Accounts class
 
