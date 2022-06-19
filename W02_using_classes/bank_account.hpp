@@ -15,14 +15,18 @@
 class Accounts{
     
 private:
-    int accoutID;
+    static int accountId;
     std::string name;
     float balance;
     
 public:
+//    static int getAccoutId(){
+//        return accountId;
+//    };
     Accounts();
     void setAccount();
      
 }; // End Accounts class
+
 
 #endif /* bank_account_hpp */

@@ -9,18 +9,20 @@
 #include <iostream>
 
 Accounts::Accounts(){
-    accoutID;
+    accountId;
     name;
     balance;
-
 };
 
 void Accounts::setAccount(){
+    accountId++;
     std::cout << "Enter account name: ";
     std::cin >> name;
     std::cout << "Enter account balance: ";
     std::cin >> balance;
-    std::cout << name << ": " << balance;
-    
+    std::cout << accountId;
+
 };
+
+int Accounts::accountId = 0;
 
