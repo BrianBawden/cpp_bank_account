@@ -16,6 +16,22 @@ int main() {
     Accounts brian;
     brian.setAccount();
     brian.viewAccount();
+    
+    bool banking = true;
+    while(banking){
+        char action;
+        std::cout
+        << "Account Menu: \n0. Quit Program \n1. Display Account Information \nYour choice: ";
+        std::cin >> action;
+        if(action == '0'){
+            std::cout << "good bye."
+            banking = false;
+        }else if(action == '1'){
+            brian.viewAccount();
+        }else{
+            std::cout << "invalid entry try again. ";
+        };
+    };
     return 0;
    
 }
