@@ -22,7 +22,7 @@ int main() {
     while(banking){
         char action;
         std::cout
-        << "Account Menu: \n0. Quit banking \n1. Display Account Information \n2. Make a deposit \n3. Make a withdrawal \nYour choice: ";
+        << "Account Menu: \n0. Quit Banking \n1. Display Account Information \n2. Make a deposit \n3. Make a withdrawal \nYour choice: ";
         std::cin >> action;
         if(action == '0'){
             std::cout << "good bye.\n";
