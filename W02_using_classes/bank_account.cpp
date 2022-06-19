@@ -33,5 +33,14 @@ void Accounts::viewAccount(){
     << std::endl;
 };
 
+void Accounts::accountDeposit(){
+    float deposit;
+    std::cout << "Enter deposit amount: \n";
+    std::cin >> deposit;
+    balance += deposit;
+    std::cout << std::fixed << std::setprecision(2);
+    std::cout << "new balance: $"<< balance << std::endl;
+}
+
 int Accounts::accountId = 0;
 

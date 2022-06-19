@@ -21,13 +21,15 @@ int main() {
     while(banking){
         char action;
         std::cout
-        << "Account Menu: \n0. Quit Program \n1. Display Account Information \nYour choice: ";
+        << "Account Menu: \n0. Quit Program \n1. Display Account Information \n2. Make a deposit \nYour choice: ";
         std::cin >> action;
         if(action == '0'){
-            std::cout << "good bye."
+            std::cout << "good bye.\n";
             banking = false;
         }else if(action == '1'){
             brian.viewAccount();
+        }else if(action == '2'){
+            brian.accountDeposit();
         }else{
             std::cout << "invalid entry try again. ";
         };

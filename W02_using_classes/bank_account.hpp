@@ -23,6 +23,7 @@ public:
     Accounts();
     void setAccount();
     void viewAccount();
+    void accountDeposit();
      
 }; // End Accounts class
 
